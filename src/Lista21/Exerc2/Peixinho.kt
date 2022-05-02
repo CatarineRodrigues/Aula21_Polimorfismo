@@ -1,17 +1,20 @@
 package Lista21.Exerc2
 
-class Peixinho: Petshop() {
+class Peixinho(val nome: String, val raça: String, val responsavel: String) : Petshop() {
 
-    override fun movimentar(){
-    super.movimentar()
+    override fun registro(){
+        println("Nome: $nome da raça $raça, tem como responsável $responsavel ")
+    }
+
+    override fun movimentar() {
         println("Nadando")
     }
-    override fun comer(){
-        super.comer()
+
+    override fun comer() {
         println("Comendo ração molhada")
     }
-    override fun dormir(){
-        super.dormir()
+
+    override fun dormir() {
         println("Dormindo de olho aberto")
     }
 }
