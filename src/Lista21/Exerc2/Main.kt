@@ -39,6 +39,8 @@ fun main() {
                 peixe.comer()
                 peixe.dormir()
             }
+            else -> { println("Raça não identificada")
+            }
         }
     }
 }
